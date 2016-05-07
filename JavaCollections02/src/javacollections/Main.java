@@ -26,11 +26,11 @@ public class Main {
         list.add("5");
         list.add("6");
 
-        System.out.println(list);
+//        System.out.println(list);
 
         // LIFO
         System.out.println("LIFO");
-        for (int i = 0; i < list.size() - 1; i++) {
+        for (int i = 0; i < list.size(); i++) {
             String first = list.removeFirst();
             list.addLast(first);
 
@@ -39,7 +39,7 @@ public class Main {
 
         // FILO
         System.out.println("FILO");
-        for (int i = 0; i < list.size() - 1; i++) {
+        for (int i = 0; i < list.size(); i++) {
             String last = list.removeLast();
             list.addFirst(last);
 
